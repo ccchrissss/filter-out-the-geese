@@ -1,10 +1,9 @@
 function gooseFilter(birds) {
 
-  let filteredArr = []
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
 
-  birds.forEach( e => {
-    !geese.includes(e) ? filteredArr.push(e) : ''
-  })
-
-  return filteredArr
+  return birds.filter( e => !geese.includes(e) )
 }
+
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
+
